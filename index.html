@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring - TBP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>📊 Dashboard Monitoring TBP</h1>
+        <p>Monitoring Real-time Sistem</p>
+    </header>
+
+    <main class="container">
+        <!-- Metrics Cards -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <h3>CPU Usage</h3>
+                <div class="metric-value" id="cpu-usage">45%</div>
+                <div class="metric-trend up">📈 +5%</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Memory</h3>
+                <div class="metric-value" id="memory-usage">67%</div>
+                <div class="metric-trend stable">➡️ Stable</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Disk Space</h3>
+                <div class="metric-value" id="disk-usage">23%</div>
+                <div class="metric-trend down">📉 -2%</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Network</h3>
+                <div class="metric-value" id="network-usage">128 Mbps</div>
+                <div class="metric-trend up">📈 +12%</div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="chart-container">
+                <h3>CPU Usage Over Time</h3>
+                <canvas id="cpuChart"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <h3>Memory Usage</h3>
+                <canvas id="memoryChart"></canvas>
+            </div>
+        </section>
+
+        <!-- System Status -->
+        <section class="status-section">
+            <h3>🔄 System Status</h3>
+            <div class="status-grid">
+                <div class="status-item online">
+                    <span class="status-dot"></span>
+                    Web Server - Online
+                </div>
+                <div class="status-item online">
+                    <span class="status-dot"></span>
+                    Database - Online
+                </div>
+                <div class="status-item warning">
+                    <span class="status-dot"></span>
+                    Cache - Degraded
+                </div>
+                <div class="status-item online">
+                    <span class="status-dot"></span>
+                    API - Online
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Dashboard Monitoring &copy; 2024 - TBP Project</p>
+    </footer>
+
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/metrics.js"></script>
+</body>
+</html>

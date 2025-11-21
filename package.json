@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-monitoring",
+  "version": "1.0.0",
+  "description": "Static Dashboard Monitoring System",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "test": "echo 'No tests yet' && exit 0"
+  }
+}
